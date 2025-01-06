@@ -1,0 +1,52 @@
+.loader {
+  width: 265px;
+  height: 265px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-circle {
+  position: absolute;
+  animation: turn 5s ease-in-out infinite;
+}
+
+.text1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.435;
+  letter-spacing: 0.14em;
+  color: #ffa821;
+}
+
+.text2 {
+  font-family: var(--third-family);
+}
+
+.text3 {
+  font-family: var(--font3);
+}
+
+@keyframes turn {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
