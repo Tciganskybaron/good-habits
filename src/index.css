@@ -41,6 +41,15 @@
   );
   --color-orange: #ffa821;
 
+  --font-extra-bold: 800;
+  --font-regular: 400;
+  --font-light: 300;
+
+  --media-s: 355px;
+  --media-m: 768px;
+  --media-l: 1440px;
+  --media-xl: 1920px;
+
   line-height: 1.35;
   font-weight: 400;
 
