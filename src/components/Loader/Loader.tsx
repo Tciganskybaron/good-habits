@@ -4,18 +4,12 @@ import './index.css';
 
 function Loader() {
   return (
-    <>
-      <div className="loader">
+    <div className="loader">
+      <div className="loader-box">
         <LoaderCircle className="loader-circle" />
         <LoaderCup className="loader-cup" />
       </div>
-
-      <div className="text">
-        <div className="text1">Текст №1</div>
-        <div className="text2">Текст №2</div>
-        <div className="text3">Текст №3</div>
-      </div>
-    </>
+    </div>
   );
 }
 

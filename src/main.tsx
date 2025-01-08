@@ -1,12 +1,24 @@
-import { StrictMode } from 'react';
+import { StrictMode, Suspense, lazy } from 'react';
+
 import { createRoot } from 'react-dom/client';
-// import App from './App.tsx';
 import './index.css';
-import Loader from './component/Loader/Loader.tsx';
+
+import Loader from './components/Loader/Loader';
+
+// Функция для искусственной задержки
+const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
+// Динамическая загрузка с задержкой
+// eslint-disable-next-line react-refresh/only-export-components
+const App = lazy(async () => {
+  await delay(5000);
+  return import('./App');
+});
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Loader />
-    {/* <App /> */}
+    <Suspense fallback={<Loader />}>
+      <App />
+    </Suspense>
   </StrictMode>
 );

@@ -1,0 +1,72 @@
+.header {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: end;
+  border-bottom: 1px solid #000000;
+  min-height: 110px;
+}
+
+.header__button {
+  margin: 0px 55px 25px 100px;
+}
+
+.header__logo-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.header__logo--sunrises {
+  width: 146px;
+}
+
+.header__logo-group::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 73px;
+  background-color: #000000;
+}
+
+@media screen and (max-width: 1440px) {
+  .header {
+    max-width: 484px;
+  }
+
+  .header__logo-group::before {
+    display: none;
+  }
+
+  .header__button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    max-width: 318px;
+  }
+
+  .header__logo--help {
+    height: 18px;
+    width: 71px;
+  }
+
+  .header__logo--dobro {
+    height: 50px;
+    width: 37px;
+  }
+
+  .header__logo--sunrises {
+    height: 28px;
+    width: 74px;
+  }
+}

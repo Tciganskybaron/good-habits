@@ -1,4 +1,12 @@
 .loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-box {
   width: 265px;
   height: 265px;
 
@@ -10,23 +18,6 @@
 .loader-circle {
   position: absolute;
   animation: turn 5s ease-in-out infinite;
-}
-
-.text1 {
-  font-family: var(--font-family);
-  font-weight: 800;
-  font-size: 32px;
-  line-height: 1.435;
-  letter-spacing: 0.14em;
-  color: #ffa821;
-}
-
-.text2 {
-  font-family: var(--third-family);
-}
-
-.text3 {
-  font-family: var(--font3);
 }
 
 @keyframes turn {
