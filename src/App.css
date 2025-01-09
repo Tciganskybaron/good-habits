@@ -4,8 +4,21 @@
 }
 
 .box {
-  height: 1079px;
   width: 100vw;
+}
+
+.box-one {
+  height: 1080px;
+}
+
+.box-two {
+  height: 1080px;
+  position: relative;
+  z-index: 2;
+}
+
+.box-three {
+  height: 1080px;
 }
 
 .box-white {
@@ -14,4 +27,34 @@
 
 .box-green {
   background: var(--color-green);
+}
+
+@media screen and (max-width: 1440px) {
+  .box-one {
+    height: 885px;
+  }
+
+  .box-two {
+    height: 1100px;
+  }
+
+  .box-three {
+    height: 1035px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box-two {
+    height: 825px;
+  }
+
+  .box-three {
+    height: 1300px;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .box-two {
+    height: 655px;
+  }
 }

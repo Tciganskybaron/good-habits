@@ -1,5 +1,5 @@
 .header {
-  max-width: 1210px;
+  max-width: 80vw;
   margin: 0 auto;
   padding: 0 20px;
 
@@ -38,7 +38,7 @@
 
 @media screen and (max-width: 1440px) {
   .header {
-    max-width: 484px;
+    max-width: 70vw;
   }
 
   .header__logo-group::before {
@@ -52,21 +52,14 @@
 
 @media screen and (max-width: 768px) {
   .header {
-    max-width: 318px;
+    max-width: 80vw;
   }
 
   .header__logo--help {
-    height: 18px;
-    width: 71px;
-  }
-
-  .header__logo--dobro {
-    height: 50px;
-    width: 37px;
+    width: 100px;
   }
 
   .header__logo--sunrises {
-    height: 28px;
-    width: 74px;
+    width: 100px;
   }
 }
