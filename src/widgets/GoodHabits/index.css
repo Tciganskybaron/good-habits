@@ -73,12 +73,10 @@
 .content-good__video {
   position: absolute;
   right: -100px;
-  bottom: -350px;
+  bottom: -250px;
   z-index: 1;
   width: auto;
-  height: 70vh;
-  /* width: 720px;
-	height: 720px; */
+  height: 75vh;
   overflow: hidden;
 }
 
