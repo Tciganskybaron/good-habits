@@ -1,5 +1,6 @@
 import GoodHabits from '@widgets/GoodHabits/GoodHabits';
-import Header from '@components/Header/Header';
+import Header from '@widgets/Header/Header';
+import Footer from '@widgets/Footer/Footer';
 import './App.css';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       </div>
       <div className="box box-two box-green">dd</div>
       <div className="box box-three box-white">dd</div>
+      <Footer className="box box-four box-green" />
     </>
   );
 }

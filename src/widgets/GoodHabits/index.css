@@ -1,6 +1,6 @@
 .content-good {
   max-width: 1210px;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -67,7 +67,7 @@
 .content-good__clouds {
   position: absolute;
   bottom: 0px;
-  right: 100px;
+  right: 140px;
 }
 
 .content-good__video {

@@ -8,6 +8,7 @@
   color: var(--color-black-button);
 
   border: 0.5px solid var(--color-black-stroke);
+  cursor: pointer;
 }
 
 .button-primary {
@@ -30,6 +31,14 @@
 
 .button:hover {
   transform: scale(1.005);
+}
+
+.button-header:hover {
+  box-shadow: 5px 6px 10px rgba(213, 224, 205, 0.95);
+}
+
+.button-footer:hover {
+  box-shadow: 5px 4px 13px rgba(123, 184, 151, 0.95);
 }
 
 .button:focus-visible {

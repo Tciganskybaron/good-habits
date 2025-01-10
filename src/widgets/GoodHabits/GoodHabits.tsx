@@ -32,9 +32,9 @@ function GoodHabits() {
             />
             Ваш браузер не поддерживает видео.
           </video>
-          <Clouds className="content-good__clouds" />
         </div>
       </div>
+      <Clouds className="content-good__clouds" />
       <CloudsBigRight className="content-good__clouds-big-right" />
       <CloudsBigLeft className="content-good__clouds-big-left" />
     </section>

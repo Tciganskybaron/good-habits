@@ -1,0 +1,72 @@
+.footer {
+  padding-top: 50px;
+}
+
+.footer__content {
+  margin-top: 10px;
+  margin: 0 auto;
+  max-width: 70vw;
+  padding-top: 51px;
+  display: flex;
+  justify-content: space-between;
+
+  font-family: var(--font3);
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+  text-align: start;
+
+  border-top: 1px solid white;
+}
+
+.footer__info-address {
+  width: 210px;
+}
+
+.footer__info-contact {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.footer__button_group {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer__info-contact-telephone::before,
+.footer__info-contact-mail::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  display: block;
+  z-index: 1;
+}
+
+.footer__info-contact-telephone::before {
+  background-image: url(/public/img/call.png);
+}
+
+.footer__info-contact-mail::before {
+  background-image: url(/public/img/letter.png);
+}
+
+.footer__info-contact-mail,
+.footer__info-contact-telephone {
+  position: relative;
+  margin-left: 20px;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__info-address,
+  .footer__info-contact {
+    font-size: 10px;
+  }
+}

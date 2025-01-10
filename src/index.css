@@ -75,3 +75,8 @@ body {
   display: flex;
   /* place-items: center; */
 }
+
+a {
+  all: unset;
+  cursor: pointer;
+}

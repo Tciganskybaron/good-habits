@@ -3,7 +3,14 @@ import { ButtonProps } from './Button.props';
 import './index.css';
 
 function Button(props: ButtonProps) {
-  const { children, location = 'header', state = 'primary', className } = props;
+  const {
+    children,
+    location = 'header',
+    state = 'primary',
+    className,
+    ...rest
+  } = props;
+
   return (
     <button
       className={cn(
@@ -12,6 +19,7 @@ function Button(props: ButtonProps) {
         `button-${state}`,
         className
       )}
+      {...rest}
     >
       {children}
     </button>
