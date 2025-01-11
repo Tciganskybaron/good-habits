@@ -1,8 +1,8 @@
 import './index.css';
-import Square from '@assets/svg/square.svg?react';
-import CloudsBigRight from '@assets/svg/clouds-big-right.svg?react';
 import CloudsBigLeft from '@assets/svg/clouds-big-left.svg?react';
+import CloudsBigRight from '@assets/svg/clouds-big-right.svg?react';
 import Clouds from '@assets/svg/clouds.svg?react';
+import Square from '@assets/svg/square.svg?react';
 
 function GoodHabits() {
   return (

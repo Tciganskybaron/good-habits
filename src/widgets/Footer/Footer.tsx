@@ -1,5 +1,6 @@
-import cn from 'classnames';
 import Button from '@components/Button/Button';
+import cn from 'classnames';
+
 import { FooterProps } from './Footer.props';
 import './index.css';
 

@@ -1,6 +1,8 @@
+import Footer from '@widgets/Footer/Footer';
 import GoodHabits from '@widgets/GoodHabits/GoodHabits';
 import Header from '@widgets/Header/Header';
-import Footer from '@widgets/Footer/Footer';
+import Info from '@widgets/Info/Info';
+
 import './App.css';
 
 function App() {
@@ -10,7 +12,9 @@ function App() {
         <Header />
         <GoodHabits />
       </div>
-      <div className="box box-two box-green">dd</div>
+      <div className="box box-two box-green">
+        <Info />
+      </div>
       <div className="box box-three box-white">dd</div>
       <Footer className="box box-four box-green" />
     </>

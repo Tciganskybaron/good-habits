@@ -1,5 +1,5 @@
-import LoaderCup from '../../assets/svg/loader-cup.svg?react';
 import LoaderCircle from '../../assets/svg/loader-circle.svg?react';
+import LoaderCup from '../../assets/svg/loader-cup.svg?react';
 import './index.css';
 
 function Loader() {

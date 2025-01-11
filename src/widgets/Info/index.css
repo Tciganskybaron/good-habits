@@ -1,0 +1,116 @@
+.info {
+  height: 100%;
+  width: 100%;
+}
+
+.info__content {
+  width: 80vw;
+  height: 100%;
+  margin: 0 auto;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info__content-box1 {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 200px;
+}
+
+.info__content-box2 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 45px;
+
+  margin-bottom: 100px;
+}
+
+.info__content-box1-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 100px;
+}
+
+.info__triangle-info {
+  margin-right: 100px;
+}
+
+.info__triangle-big,
+.info__tree,
+.info__slogan {
+  position: absolute;
+}
+
+.info__triangle-big {
+  right: 400px;
+  top: -100px;
+}
+
+.info__fireworks {
+  position: absolute;
+  display: block;
+  z-index: -1;
+}
+
+.info__fireworks-one {
+  top: -150px;
+  right: 50%;
+  margin-right: -870px;
+}
+
+.info__fireworks-two {
+  left: -210px;
+}
+
+.info__slogan {
+  width: 80vw;
+  top: 90px;
+  left: 1px;
+}
+
+.info__slogan path {
+  stroke: white;
+  fill: none;
+  opacity: 0;
+  transition:
+    opacity 0.5s ease,
+    stroke-dashoffset 0.5s ease;
+}
+
+.info__tree {
+  bottom: 1px;
+  right: 10vw;
+}
+
+.info__content-text {
+  width: 514px;
+
+  font-family: var(--third-family);
+  font-weight: var(--font-regular);
+  font-size: 20px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--color-black);
+}
+
+.info__content-text-bro {
+  width: 300px;
+}
+
+.info__content-text-help {
+  width: 500px;
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 768px) {
+}

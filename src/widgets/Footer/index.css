@@ -50,11 +50,11 @@
 }
 
 .footer__info-contact-telephone::before {
-  background-image: url(/public/img/call.png);
+  background-image: url(/img/call.png);
 }
 
 .footer__info-contact-mail::before {
-  background-image: url(/public/img/letter.png);
+  background-image: url(/img/letter.png);
 }
 
 .footer__info-contact-mail,
