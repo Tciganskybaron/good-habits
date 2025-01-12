@@ -1,0 +1,35 @@
+.slogan-big {
+  display: block;
+}
+
+.slogan-midle {
+  display: none;
+}
+
+.slogan-little {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .slogan-big {
+    display: none;
+  }
+
+  .slogan-midle {
+    display: block;
+  }
+
+  .slogan-little {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .slogan-midle {
+    display: none;
+  }
+
+  .slogan-little {
+    display: block;
+  }
+}

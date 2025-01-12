@@ -1,10 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react';
 
-export const useAnimation = (
-  ref: React.RefObject<HTMLDivElement | null>,
-  refSvg: React.RefObject<SVGSVGElement | null>
-) => {
+export const useAnimation = (refSvg: React.RefObject<SVGSVGElement | null>) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -12,8 +9,8 @@ export const useAnimation = (
       ([entry]) => {
         if (entry.isIntersecting && !isVisible) {
           setIsVisible(true);
-          if (ref.current) {
-            observer.unobserve(ref.current);
+          if (refSvg.current) {
+            observer.unobserve(refSvg.current);
           }
         }
       },
@@ -22,16 +19,16 @@ export const useAnimation = (
       }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    if (refSvg.current) {
+      observer.observe(refSvg.current);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (refSvg.current) {
+        observer.unobserve(refSvg.current);
       }
     };
-  }, [ref, isVisible]);
+  }, [refSvg, isVisible]);
 
   useEffect(() => {
     if (!refSvg.current || !isVisible) return;
