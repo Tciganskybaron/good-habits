@@ -1,0 +1,106 @@
+.form__block {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+}
+
+.form__block_form_box {
+  position: relative;
+  height: 943px;
+  width: 593px;
+}
+
+.form__block_form {
+  position: absolute;
+  top: -20px;
+  z-index: 2;
+  height: 943px;
+  width: 593px;
+  background-image: url(/img/form.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__block_box1 {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.form__block_box_cloud {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.form__block_text {
+  margin-left: 150px;
+}
+
+.form__block_text_help {
+  font-family: var(--third-family);
+  font-weight: var(--font-extra-bold);
+  font-size: 32px;
+  line-height: 1.435;
+  letter-spacing: 0.14em;
+  color: var(--color-orange);
+  width: 405px;
+  text-align: start;
+}
+
+.form__block_text_info {
+  font-family: var(--third-family);
+  font-weight: var(--font-regular);
+  font-size: 16px;
+  letter-spacing: 0.07em;
+  color: var(--color-black);
+  text-align: start;
+}
+
+.form__block_text_info span {
+  width: 405px;
+  margin-top: 20px;
+  display: block;
+}
+
+.form__block_social-text {
+  font-family: var(--third-family);
+  font-weight: var(--font-extra-bold);
+  font-size: 38px;
+  line-height: 1.435;
+  letter-spacing: 0.14em;
+  color: var(--color-green-text);
+}
+
+.form__block_social,
+.form__block_social-link-group {
+  display: flex;
+  gap: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__block_social-link-classmates {
+  background-image: url(/img/classmates.png);
+}
+
+.form__block_social-link-telegramm {
+  background-image: url(/img/telegramm.png);
+}
+
+.form__block_social-link-vk {
+  background-image: url(/img/vk.png);
+}
+
+.form__block_social-link {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 355px) {
+}

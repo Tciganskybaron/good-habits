@@ -36,13 +36,15 @@ function Footer({ className, ...rest }: FooterProps) {
           </div>
         </address>
         <div className="footer__button_group">
-          <Button className="footer__button" location="footer">
+          <Button className="footer__button" location="footer" href="#form">
             ПОМОЧЬ СЕЙЧАС
           </Button>
           <Button
             className="footer__button"
             location="footer"
             state="secondary"
+            target="_blank"
+            href="https://bf-pomosch.ru/request-for-help/"
           >
             НУЖНА ПОМОЩЬ
           </Button>

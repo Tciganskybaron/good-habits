@@ -8,7 +8,9 @@ import './index.css';
 function Header() {
   return (
     <header className="header">
-      <Button className="header__button">Поддержать</Button>
+      <Button className="header__button" href="#form">
+        Поддержать
+      </Button>
       <div className="header__logo-group">
         <Help className="header__logo--help" />
         <Dobro className="header__logo--dobro" />

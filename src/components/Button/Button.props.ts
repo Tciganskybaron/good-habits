@@ -1,9 +1,7 @@
-import { ButtonHTMLAttributes, DetailedHTMLProps } from 'react';
-
 export interface ButtonProps
-  extends DetailedHTMLProps<
-    ButtonHTMLAttributes<HTMLButtonElement>,
-    HTMLButtonElement
+  extends React.DetailedHTMLProps<
+    React.AnchorHTMLAttributes<HTMLAnchorElement>,
+    HTMLAnchorElement
   > {
   children: string;
   location?: 'header' | 'footer';

@@ -1,4 +1,8 @@
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-family: var(--third-family);
   font-weight: 400;
   font-size: 23px;

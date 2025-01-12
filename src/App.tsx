@@ -1,4 +1,5 @@
 import Footer from '@widgets/Footer/Footer';
+import FormBlock from '@widgets/FormBlock/FormBlock';
 import GoodHabits from '@widgets/GoodHabits/GoodHabits';
 import Header from '@widgets/Header/Header';
 import Info from '@widgets/Info/Info';
@@ -15,7 +16,9 @@ function App() {
       <div className="box box-two box-green">
         <Info />
       </div>
-      <div className="box box-three box-white">dd</div>
+      <div className="box box-three box-white">
+        <FormBlock />
+      </div>
       <Footer className="box box-four box-green" />
     </>
   );

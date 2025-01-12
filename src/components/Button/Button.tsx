@@ -13,7 +13,7 @@ function Button(props: ButtonProps) {
   } = props;
 
   return (
-    <button
+    <a
       className={cn(
         'button',
         `button-${location}`,
@@ -23,7 +23,7 @@ function Button(props: ButtonProps) {
       {...rest}
     >
       {children}
-    </button>
+    </a>
   );
 }
 
